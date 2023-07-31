@@ -127,6 +127,15 @@ body {
   color: var(--clr-primary-400);
 }
 
+p:not([class]) {
+  opacity: 0.7;
+  max-width: 32ch;
+}
+
+p[data-width="wide"] {
+  max-width: 42ch;
+}
+
 /* button */
 
 .button {
@@ -271,6 +280,14 @@ body {
 
   width: min(var(--max-width), 100% - (var(--padding)) * 2);
   margin-inline: auto;
+}
+
+.vertical-align-center {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 :where(.flow > :not(:first-child)) {
